@@ -4,11 +4,11 @@
 	height:auto;
 }
 
-#time::before{
+.time::before{
 	content: "\00b7";
 }
 
-#postHeader span{
+.postHeader span{
 	color:#e0e0d1;
 }
 
