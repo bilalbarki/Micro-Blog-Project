@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	
+	<meta name="keywords" content="statuses, status, user" />
+	<meta name="description" content="This page shows all the statuses the user posted" />
+	<meta name="author" content="Impossible Octopus Fitness" />
 	<link rel="stylesheet" type="text/css" href="reset.css" />
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<link rel="stylesheet" type="text/css" href="header.css" />
@@ -10,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="footer.css" />
 	<link rel="stylesheet" type="text/css" href="buttons.css" />
     <link rel="stylesheet" type="text/css" href="myStatus.css" />
+    <link rel="stylesheet" type="text/css" href="seo.css" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -23,18 +26,18 @@
 		
 		<header>
 		<div class="paddingHeader">
-			<a href="index.html"><img src="images/logo.png" alt="" class="logo" /></a>
+			<a href="index.html"><img src="images/logo.png" alt="main" class="logo" /></a>
             <h1 id="mainTitle">HaShare</h1>
 			<div class="upperNav">
 				<ul>
   					<li>
   						<div class="form">
 	  						<form id="formClick">
-								<input type="text" class="search" placeholder="Search..." id="search"><span><button type="" value="Search" class="searchButton" id="searchButton"><span class="searchIcon"></span></button></span>
+								<input type="text" class="search" placeholder="Search..." id="search"><span><button type="submit" value="Search" class="searchButton" id="searchButton"><span class="searchIcon"></span></button></span>
 							</form>
 						</div>
   					</li>
-  					<li><img src="images/photo1.jpg" alt="" /></li>
+  					<li><img src="images/photo1.jpg" alt="I" /></li>
   					
   				</ul>
   				<ul class="pipes">
@@ -49,7 +52,8 @@
 				<ul>
   					<li><a href="index.html" class="navButton"><span class="homeIcon"></span>Home</a></li>
   					<li><a href="myStatus.html" class="navButton navButtonCurrentlyViewing"><span class="statusesIcon"></span>My Status</a></li>
-  					<li><a href="#" class="navButton"><span class="usersIcon"></span>All Users</a></li>
+  					<li><a href="allUsers.html" class="navButton"><span class="usersIcon"></span>All Users</a></li>
+  					<li><a href="about.html" class="navButton"><span class="usersIcon"></span>About</a></li>
 				</ul>
 			</div>
 		</div>
@@ -62,7 +66,7 @@
                 </div>
 				<div class="asideGeneralBlock asideUsers">					
 						<div class="singleProfileAside">
-							<a href=""><img class="singleProfilePic" src="images/photo1.jpg" alt="" /></a>
+							<a href="about.html"><img class="singleProfilePic" src="images/photo1.jpg" alt="" /></a>
 							<table>
 								<tr>
 									<td>
@@ -71,7 +75,7 @@
 								</tr>
 								<tr>
 									<td>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim.</p>
+										<p>I seriously don't know what to write here <a href="about.html">about me</a></p>
 									</td>
 								</tr>
 								<tr>
@@ -92,10 +96,10 @@
 				<div class="blockFeed">
 					<div class="post">
 						<div class="postHeader">
-							<a href="#"><img src="images/photo1.jpg" alt="" /></a>
+							<a href="about.html"><img src="images/photo1.jpg" alt="I" /></a>
 							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim.</p>
+						<p>This is a test post. So that I can check whether my text is actually adjusting below the image when it overflows beyond the image size. Isn't this amazing? Ya I think it is purely awesome! Wow so cool. I'll just keep writing to make the text look longer and it has to overflow to smoothly adjust itself under the image. And this is mystatus page. I'll just stop writing now. Lets see at what number I get ranked!</p>
 						
 						<div class="clearFloat"></div>
 							<ul class="postSocialButtons">
@@ -107,10 +111,10 @@
 					</div>
 					<div class="post">
 						<div class="postHeader">
-							<a href="#"><img src="images/photo1.jpg" alt="" /></a>
+							<a href="about.html"><img src="images/photo1.jpg" alt="" /></a>
 							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim.</p>
+						<p>Okay, this is it!</p>
 						
 						<div class="clearFloat"></div>
 							<ul class="postSocialButtons">
@@ -122,10 +126,10 @@
 					</div>
 					<div class="post">
 						<div class="postHeader">
-							<a href="#"><img src="images/photo1.jpg" alt="" /></a>
+							<a href="#"><img src="images/photo1.jpg" alt="I" /></a>
 							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim.</p>
+						<p>Not trying to be very awesome, but I think I am awesome lol.</p>
 						
 						<div class="clearFloat"></div>
 							<ul class="postSocialButtons">
@@ -137,10 +141,10 @@
 					</div>
 					<div class="post">
 						<div class="postHeader">
-							<a href="#"><img src="images/photo1.jpg" alt="" /></a>
+							<a href="about.html"><img src="images/photo1.jpg" alt="I" /></a>
 							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim.</p>
+						<p>Wow, amazing work Holberton Students!</p>
 						
 						<div class="clearFloat"></div>
 							<ul class="postSocialButtons">
@@ -150,18 +154,18 @@
 	  							<li><a href="#"><span class="moreIcon"></span></a></li>
 							</ul>
 					</div>
-				
+				</div>
 			</article>
 			<div class="clearFloat"></div>
 			
 			<footer>
 				<p>This website is in beta</p>
 			</footer>
-			</div>
+			
 		</main>
 	
 	</div>
-
+</div>
     <script>
         var input = document.getElementById("search");
         var searchButton = document.getElementById("searchButton");
