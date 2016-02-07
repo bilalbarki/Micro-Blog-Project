@@ -1,3 +1,5 @@
+/*CSS file for general styles that are not specific*/
+
 body{
 	background: #f5f8fa;
 }
@@ -11,6 +13,9 @@ a{
 	color:#000000;
 }
 
+h1, h2, p{
+	color:#222222;
+}
 #maincontainer{
 	width:992px;
 	border:1px solid #dedede;
@@ -20,7 +25,7 @@ a{
 }
 
 .grey{
-	color:#e0e0d1;
+	color:#bbbbbb;
 }
 
 b{

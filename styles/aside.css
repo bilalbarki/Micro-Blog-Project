@@ -1,4 +1,6 @@
-/*to be in the general css later*/
+/*CSS styling for aside*/
+
+/*Font Sizes*/
 aside h2, aside p{
 	font-size: 1em;
 }
@@ -10,10 +12,9 @@ aside h1{
 .asideLinks li{
 	font-size:0.9em;
 }
+/*End*/
 
 
-
-/*end*/
 aside{
 	overflow: hidden;
 }
@@ -21,6 +22,10 @@ aside{
 .notableUsersHeading li, .notableUsersHeading h1, .notableUsersHeading ul{
 	display:inline-block;
 
+}
+
+.notableUsersHeading p{
+	font-size:1.3em;
 }
 
 .notableUsersHeading h1{
@@ -43,8 +48,6 @@ aside{
 }
 
 
-
-
 .asideLinks li{
 	display:inline-block;
 	padding:3px;
@@ -55,6 +58,7 @@ aside{
 	
 }
 
+/*Whole block containing aside*/
 .asideGeneralBlock{
 	margin-left:auto; margin-right:0;
 	background:#ffffff;
@@ -64,3 +68,4 @@ aside{
 	padding:10px;
 	margin-bottom:14px;
 }
+/*End/*
