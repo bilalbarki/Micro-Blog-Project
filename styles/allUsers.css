@@ -1,3 +1,5 @@
+/*Styling file for allUser.html*/
+
 article{
 	float:left;
 	width:340px;
@@ -62,6 +64,3 @@ padding: 10px 0;
 	border-bottom: 1px solid #dedede;
 }
 
-.notableUsersHeading p{
-	font-size:1.3em;
-}

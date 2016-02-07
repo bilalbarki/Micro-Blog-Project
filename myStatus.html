@@ -1,18 +1,23 @@
+<!-- Twitter Clone Project Using Floats
+Author: Bilal Khan & Mason Fish -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!--Some Meta tags for SEO-->
 	<meta name="keywords" content="statuses, status, user" />
 	<meta name="description" content="This page shows all the statuses the user posted" />
 	<meta name="author" content="Impossible Octopus Fitness" />
-	<link rel="stylesheet" type="text/css" href="reset.css" />
-	<link rel="stylesheet" type="text/css" href="styles.css" />
-	<link rel="stylesheet" type="text/css" href="header.css" />
-	<link rel="stylesheet" type="text/css" href="article.css" />
-	<link rel="stylesheet" type="text/css" href="aside.css" />
-	<link rel="stylesheet" type="text/css" href="footer.css" />
-	<link rel="stylesheet" type="text/css" href="buttons.css" />
-    <link rel="stylesheet" type="text/css" href="myStatus.css" />
-    <link rel="stylesheet" type="text/css" href="seo.css" />
+	<!-- All css files to be merged together for publishing in future to minimize http requests -->
+	<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+	<link rel="stylesheet" type="text/css" href="styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="styles/article.css" />
+	<link rel="stylesheet" type="text/css" href="styles/aside.css" />
+	<link rel="stylesheet" type="text/css" href="styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="styles/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="styles/myStatus.css" />
+    <link rel="stylesheet" type="text/css" href="styles/seo.css" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -22,16 +27,16 @@
 </head>
 <body>
 
-	<div id="maincontainer">
+	<div id="maincontainer">	<!--main container that contains every other body elements-->
 		
 		<header>
-		<div class="paddingHeader">
+		<div class="paddingHeader">	<!--paddingHeader for defining header padding-->
 			<a href="index.html"><img src="images/logo.png" alt="main" class="logo" /></a>
-            <h1 id="mainTitle">HaShare</h1>
-			<div class="upperNav">
+            <h2 id="mainTitle">HaShare</h2>
+			<div class="upperNav">	<!--UpperNav contains Logout, edit my profile, picture and searchbar-->
 				<ul>
   					<li>
-  						<div class="form">
+  						<div class="form">	<!--Searchbar-->
 	  						<form id="formClick">
 								<input type="text" class="search" placeholder="Search..." id="search"><span><button type="submit" value="Search" class="searchButton" id="searchButton"><span class="searchIcon"></span></button></span>
 							</form>
@@ -40,16 +45,18 @@
   					<li><img src="images/photo1.jpg" alt="I" /></li>
   					
   				</ul>
-  				<ul class="pipes">
+  				<ul class="pipes">	<!--piping is used here to add | between the li elements -->
   					<li><a href="#" class="aHoverUnderline" style="color:#0084B4">Edit my profile</a></li>
   					
   					<li><a href="#" class="aHoverUnderline" style="color:#0084B4">Logout</a></li>
 				</ul>
 			</div>
 			<div class="clearFloat"></div>
-			<h2 id="tagLine"><em>"Share your life!"</em></h2>
-			<div class="lowerNav">
+			<h2 id="tagLine"><b>Share your life<em>!</em></b></h2>
+			<div class="clearFloat"></div>
+			<div class="lowerNav">	<!--lowerNav contains menu buttons such as Home, All Users-->
 				<ul>
+					<!--class "navButtonCurrentlyViewing" is used to make the lower border blue of the currently active menu button-->
   					<li><a href="index.html" class="navButton"><span class="homeIcon"></span>Home</a></li>
   					<li><a href="myStatus.html" class="navButton navButtonCurrentlyViewing"><span class="statusesIcon"></span>My Status</a></li>
   					<li><a href="allUsers.html" class="navButton"><span class="usersIcon"></span>All Users</a></li>
@@ -58,13 +65,13 @@
 			</div>
 		</div>
 		</header>
-		<div class="padding">
+		<div class="padding">	<!--padding for main tag-->
 		<main>
             <aside>
-                <div class="asideGeneralBlock singleProfileName">
-                <h2>John Smith</h2>
+                <div class="asideGeneralBlock singleProfileName">	<!--User's own name-->
+                	<h2>John Smith</h2>
                 </div>
-				<div class="asideGeneralBlock asideUsers">					
+				<div class="asideGeneralBlock asideUsers">	<!--User's own picture, bio, etc. on the left side.-->				
 						<div class="singleProfileAside">
 							<a href="about.html"><img class="singleProfilePic" src="images/photo1.jpg" alt="" /></a>
 							<table>
@@ -93,9 +100,9 @@
 
 			</aside>
 			<article>
-				<div class="blockFeed">
+				<div class="blockFeed">	<!--Contains user's own statuses-->
 					<div class="post">
-						<div class="postHeader">
+						<div class="postHeader"> <!--Uses the same layout as index.html, check that file -->
 							<a href="about.html"><img src="images/photo1.jpg" alt="I" /></a>
 							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
 						</div>
@@ -147,7 +154,7 @@
 						<p>Wow, amazing work Holberton Students!</p>
 						
 						<div class="clearFloat"></div>
-							<ul class="postSocialButtons">
+							<ul class="postSocialButtons">	<!--Piping is used-->
 	  							<li><a href="#"><span class="replyIcon"></span></a></li>
 	  							<li><a href="#"><span class="reTweetIcon"></span></a></li>
 	  							<li><a href="#"><span class="likeIcon"></span></a></li>
@@ -158,7 +165,7 @@
 			</article>
 			<div class="clearFloat"></div>
 			
-			<footer>
+			<footer>	<!--always stays at bottom right corner -->
 				<p>This website is in beta</p>
 			</footer>
 			
