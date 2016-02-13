@@ -32,4 +32,27 @@
 		margin: 0 auto;
 		text-align: center;
 	}
+	main article {
+		display: block;
+		float: none;
+		margin: 5px auto;
+		width: 100%;
+	}
+	main aside {
+		display: block;
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.asideGeneralBlock {
+		margin: 0 auto;
+		width: auto;
+	}
+	footer {
+		position: static;
+		display: block;
+		width: 100%;
+		margin: 5px auto;
+		text-align: center;
+	}
 }
