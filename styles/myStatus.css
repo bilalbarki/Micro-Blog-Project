@@ -2,7 +2,14 @@
 
 aside {
     float: left;
-    width: 265px;
+    width: 700px;
+
+}
+ aside h2, aside p{
+    font-size:1.1em;
+ }
+aside li>a{
+    color:#a7a7a7;
 }
 
 .asideGeneralBlock {
@@ -12,7 +19,7 @@ aside {
 article {
     margin-left: 5px;
     float: left;
-    width: 700px;
+    width: 265px;
 }
 
 .singleProfileName {
@@ -33,4 +40,26 @@ article {
 
 .profileMargin {
     margin: 10px 0;
+}
+
+@media (max-width: 992px) and (min-width:768px) {
+    article{
+        width:98%;
+    }
+
+    .singleProfileName{
+        float:right;
+        height:250px;
+        background:#f5f8fa;
+        border:none;
+        width:45%;
+    }
+    .singleProfileName h2{
+        vertical-align: middle;
+        margin-top:125px;
+        font-size:2.5em;
+
+    }
+   
+
 }
