@@ -16,6 +16,10 @@ a{
 h1, h2, p{
 	color:#222222;
 }
+
+main{
+	display:table;
+}
 #maincontainer{
 	width:992px;
 	border:1px solid #dedede;
@@ -32,17 +36,7 @@ b{
 	font-weight: bold;
 }
 
-.clearFloat{
-	clear:both;
-}
 
-.clearLeft{
-	clear:left;
-}
-
-.clearRight{
-	clear:right;
-}
 
 .aHoverColorUnderline:hover{
 	text-decoration:underline;

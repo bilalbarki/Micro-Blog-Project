@@ -7,22 +7,24 @@
 	#mainTitle {
 		display: block;
 		width: 100%;
-		clear: both;
-		float: none;
+		
 		margin: 0 auto;
 	}
 	.logoTagline{
+		display:block;
 		
-		float:none;
 		
 		text-align:center;
+	}
+	.supernav{
+		display:block;
 	}
 
 	.logo {
 		display: block;
 		margin: 0 auto;
 		
-		float: none;
+		
 	}
 	.logo h2{
 		margin:0;
@@ -35,24 +37,24 @@
 	}
 	.lowerNav {
 		display: block;
-		float:none;
+		
 		margin: auto;
 		text-align: center;
 	}
 
 	.lowerNav li{
 		display:inline-block;
-		float:none;
+		
 	}
 	main article {
 		display: block;
-		float: none;
+		
 		margin: 5px auto;
 		width: 100%;
 	}
 	main aside {
 		display: block;
-		float: none;
+		
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -67,17 +69,29 @@
 		margin: 5px auto;
 		text-align: center;
 	}
+
+	.lowerNav{
+	margin-top:0;
+}
+
+.paddingHeader{
+	display:block;
+	width:inherit;
+}
 }
 /*end*/
 
 /*media query for >768px to <992px to screen size*/
 @media (max-width: 992px) and (min-width:768px) {
+main{
+	display:block;
+}
 #maincontainer{
 	width:100%;
 }
 
 article{
-	float:none;
+	display:block;
 	width:100%;
 	
 }
@@ -85,13 +99,13 @@ article{
 
 aside{
 	overflow: hidden;
-	float:left;
+	display:table-cell;
 	width:66.6%;
 
 }
 
 .asideUsers{
-	float:left;
+	display:table-cell;
 	width:45%;
 
 	overflow: hidden;
@@ -99,7 +113,7 @@ aside{
 
 .asideLinks{
 	width:45%;
-	float:right;
+	display:table-cell;
 	overflow: hidden;
 	right:0;
 	
@@ -109,7 +123,7 @@ aside{
 footer{
 	position:static;
 	width:31.6%;
-	float:right;
+	display:table-cell;
 }
 
 aside, footer{
@@ -125,6 +139,8 @@ aside, footer{
 @media (max-width: 550px){
 	#nav-button{
 		display:block;
+		position:absolute;
+		right:0;
 	}
 
 	/*
@@ -184,12 +200,15 @@ aside, footer{
 
 .logoTagline{
 		
-		float:left;
+		
 		
 		text-align:left;
 	}
+
 	.logo{
 		width:36px;
+		margin-right:0;
+		margin-left:34px;
 	}
 	#tagLine{
 		font-size:0.95em;

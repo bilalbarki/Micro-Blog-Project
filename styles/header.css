@@ -16,20 +16,11 @@ header{
 .logo{
 	width:60px;
 	height:auto;
-	float:left;
+	display:table-cell;
 	margin: 5px 0 0 30px;
 }
 
-#mainTitle {
-    font-family: futura, sans-serif;
-    color: #4996FF;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 3.0em;
-    float: left;
-    margin-top: 25px;
-    margin-left: 260px;
-    text-align: center;
-}
+
 
 #tagLine {
     
@@ -53,11 +44,12 @@ header a{
 	display:inline-block;
 }
 .lowerNav li{
-	float:left;
-	margin-right:3px;
+	display:table-cell;
+	padding-right:3px;
 }
 .lowerNav{
-	float:right;
+	display:table;
+	margin-left:auto;
 }
 header li>img{
 	width:25px;
@@ -171,5 +163,20 @@ header li{
 }
 
 .logoTagline{
-	float:left;
+	display:table-cell;
+}
+
+.supernav{
+	display:table-cell;
+	vertical-align: top;
+
+}
+
+.lowerNav{
+	margin-top:65px;
+}
+
+.paddingHeader{
+	display:table;
+	width:100%;
 }
