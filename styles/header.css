@@ -32,7 +32,7 @@ header{
 }
 
 #tagLine {
-    float: left;
+    
     color: #333;
     font-size: 1.1em;
     margin: 0 0 0 10px;
@@ -49,10 +49,16 @@ header a{
 	text-decoration:none;
 }
 
-header li, header ul{
+.upperNav li{
 	display:inline-block;
 }
-
+.lowerNav li{
+	float:left;
+	margin-right:3px;
+}
+.lowerNav{
+	float:right;
+}
 header li>img{
 	width:25px;
 	height:auto;
@@ -162,4 +168,8 @@ header li{
 
 .pipes li + li::before {
     content: " | ";
+}
+
+.logoTagline{
+	float:left;
 }

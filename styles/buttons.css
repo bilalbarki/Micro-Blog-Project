@@ -73,3 +73,30 @@
     
 }
 /*End*/
+
+.menuIcon::before{
+    font-family:FontAwesome;
+    content: "\F039";
+    font-size:1.9em;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -o-transition:all 0.5s;
+}
+
+#nav-button{
+    float:right;
+    display:none;
+    height:48px;
+    width:48px;
+    cursor:pointer;
+
+    background-color: #c2c3c5;
+    border:1px solid #dedede;
+    outline:none;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -o-transition:all 0.5s;
+}
+

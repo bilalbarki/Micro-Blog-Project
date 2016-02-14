@@ -2,15 +2,40 @@
 
 article{
 	float:left;
-	width:340px;
+	width:675px;
 	
 	overflow:hidden;
 }
 
-.asideGeneralBlock {
-	width:97%;
+.AllUsersList {
+	width:95%;
+	
+	background:#ffffff;
+	
+	border-radius:5px;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-bottom:14px;
+
 }
 
+.asideGeneralBlock{
+	width:initial;
+	margin:0;
+}
+
+.asideLinks{
+	margin-top:10px;
+}
+
+.postSocialButtons li{
+	margin-right:50px;
+
+}
+
+.postSocialButtons a{
+	color:#a7a7a7;
+}
 .messageIcon::before{
 	font-family:FontAwesome;
 	content: "\f0e0";
@@ -29,11 +54,6 @@ article{
 
 
 
-.asideGeneralBlock{
-
-padding: 10px 0;
-
-}
 
 .followButton{
 	margin-top: 0;
@@ -56,7 +76,9 @@ padding: 10px 0;
 	padding-bottom:10px;
 }
 
-
+.followMessageMore{
+	float:right;
+}
 
 .blockFeed h3{
 	font-size:1.2em;
@@ -64,3 +86,30 @@ padding: 10px 0;
 	border-bottom: 1px solid #dedede;
 }
 
+aside{
+	height:auto;
+}
+
+@media (max-width: 992px) and (min-width:768px) {
+	.asideUsers{
+		width:48% !important;
+	}
+
+	.postSocialButtons li{
+	margin-right:15%;
+
+}
+
+.asideLinks{
+	margin-top:0;
+}
+.AllUsersList{
+	width:auto;
+}
+}
+
+@media screen and (max-width: 600px) {
+	.followMessageMore{
+	float:none;
+}
+	}
