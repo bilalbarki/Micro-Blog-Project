@@ -1,8 +1,8 @@
 /*Styling file for allUser.html*/
 
 article{
-	float:left;
-	width:675px;
+	
+
 	
 	overflow:hidden;
 }
@@ -29,7 +29,7 @@ article{
 }
 
 .postSocialButtons li{
-	margin-right:50px;
+	margin-right:25px;
 
 }
 
@@ -76,9 +76,7 @@ article{
 	padding-bottom:10px;
 }
 
-.followMessageMore{
-	float:right;
-}
+
 
 .blockFeed h3{
 	font-size:1.2em;
@@ -93,6 +91,11 @@ aside{
 @media (max-width: 992px) and (min-width:768px) {
 	.asideUsers{
 		width:48% !important;
+	}
+
+	article{
+		display:block;
+	width:100% !important;
 	}
 
 	.postSocialButtons li{
@@ -110,6 +113,6 @@ aside{
 
 @media screen and (max-width: 600px) {
 	.followMessageMore{
-	float:none;
+	
 }
 	}

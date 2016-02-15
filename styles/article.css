@@ -9,12 +9,20 @@ article{
 
 /*end*/
 
+.post a{
+	display:table-cell;
+}
 .post img{
-	float:left;
+	
 	width:48px;
 	height:auto;
 	border-radius: 5px;
 	margin-right:5px;
+}
+
+.postHeader{
+	display:table-cell;
+ vertical-align: top;
 }
 
 .time::before{
@@ -27,7 +35,7 @@ article{
 }
 
 article{
-	float:left;
+	display:table-cell;
 	width:700px;
 	
 	overflow:hidden;

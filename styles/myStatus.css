@@ -1,10 +1,6 @@
 /*Styling file for myStatus.html*/
 
-aside {
-    float: left;
-    width: 700px;
 
-}
  aside h2, aside p{
     font-size:1.1em;
  }
@@ -18,7 +14,7 @@ aside li>a{
 
 article {
     margin-left: 5px;
-    float: left;
+   
     width: 265px;
 }
 
@@ -48,15 +44,16 @@ article {
     }
 
     .singleProfileName{
-        float:right;
+       display:table-cell;
         height:250px;
         background:#f5f8fa;
         border:none;
         width:45%;
+        vertical-align: middle;
     }
     .singleProfileName h2{
-        vertical-align: middle;
-        margin-top:125px;
+        
+      
         font-size:2.5em;
 
     }
