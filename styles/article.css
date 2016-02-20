@@ -27,20 +27,13 @@ article{
 }
 
 article{
-	float:left;
-	width:700px;
-	
-	overflow:hidden;
+	flex: auto;
 }
 
-.blockFeed{
-	
-	background:#ffffff;
-	
+.blockFeed{	
+	background:#ffffff;	
 	border-radius:5px;
-	border:1px solid #dedede;
-	
-	
+	border:1px solid #dedede;	
 }
 
 .post:hover{
@@ -50,8 +43,7 @@ article{
 /*Like, retweet, reply css*/
 .replyIcon::before{
 	font-family:FontAwesome;
-	content: "\f112";
-	
+    content: "\f112";	
 }
 
 .reTweetIcon::before{
