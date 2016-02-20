@@ -1,7 +1,7 @@
 /*Styling file for myStatus.html*/
 
 aside {
-    float: left;
+    flex-direction: row-reverse;
     width: 700px;
 
 }
@@ -18,7 +18,7 @@ aside li>a{
 
 article {
     margin-left: 5px;
-    float: left;
+    flex-direction: row-reverse;
     width: 265px;
 }
 
@@ -48,7 +48,7 @@ article {
     }
 
     .singleProfileName{
-        float:right;
+/*        float:right;*/
         height:250px;
         background:#f5f8fa;
         border:none;

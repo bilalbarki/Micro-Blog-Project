@@ -1,61 +1,77 @@
 /*CSS file for general styles that are not specific*/
 
-body{
-	background: #f5f8fa;
+body {
+    background: #f5f8fa;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 992px;
 }
 
-em{
-	 font-style: italic;
+em {
+    font-style: italic;
 }
 
-a{
-	text-decoration: none;
-	color:#000000;
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
-h1, h2, p{
-	color:#222222;
+h1,
+h2,
+p {
+    color: #222222;
 }
 
-.grey{
-	color:#bbbbbb;
+.grey {
+    color: #bbbbbb;
 }
 
-b{
-	font-weight: bold;
+b {
+    font-weight: bold;
 }
 
-.clearFloat{
-	clear:both;
+.clearFloat {
+    clear: both;
 }
 
-.clearLeft{
-	clear:left;
+.clearLeft {
+    clear: left;
 }
 
-.clearRight{
-	clear:right;
+.clearRight {
+    clear: right;
 }
 
-.aHoverColorUnderline:hover{
-	text-decoration:underline;
-	color:#0084B4;
+.aHoverColorUnderline:hover {
+    text-decoration: underline;
+    color: #0084B4;
 }
 
-.aHoverUnderline:hover{
-	text-decoration:underline;
+.aHoverUnderline:hover {
+    text-decoration: underline;
 }
 
-main{
-	display: flex;
-    
+main {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
 }
 
-
-.padding{
-	padding: 3px 10px 9px 10px;
+.padding {
+    padding: 3px 10px 9px 10px;
 }
