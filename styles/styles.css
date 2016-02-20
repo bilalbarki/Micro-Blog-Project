@@ -2,6 +2,10 @@
 
 body{
 	background: #f5f8fa;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 992px;
 }
 
 em{
@@ -15,13 +19,6 @@ a{
 
 h1, h2, p{
 	color:#222222;
-}
-#maincontainer{
-	width:992px;
-	border:1px solid #dedede;
-	margin:auto;
-	font-family:'Open Sans',Verdana,Arial;
-	font-size:13px;
 }
 
 .grey{
@@ -53,12 +50,11 @@ b{
 	text-decoration:underline;
 }
 
-/*
 main{
-	margin-top:10px;
-	border:1px solid #dedede;
+	display: flex;
+    
 }
-*/
+
 
 .padding{
 	padding: 3px 10px 9px 10px;
