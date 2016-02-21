@@ -1,7 +1,7 @@
 /*media query for <768px screen size*/
 @media screen and (max-width: 768px) {
 	#maincontainer {
-		width: 100%;
+		width: 99.5%;
 	}
 
 	
@@ -44,7 +44,7 @@
 	}
 	main article {
 		
-		margin: 5px auto;
+		
 		width: 100%;
 	}
 	main aside {
