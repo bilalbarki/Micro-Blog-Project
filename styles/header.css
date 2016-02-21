@@ -1,35 +1,29 @@
 /*Styles for the header*/
 
-header {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    flex-flow: row wrap;
-    background-color: #ffffff;
-    margin-bottom: 5px;
-    -webkit-box-shadow: 0 4px 4px -2px #dedede;
-    -moz-box-shadow: 0 4px 4px -2px #dedede;
-    box-shadow: 0 4px 4px -2px #dedede;
-    border-radius: 5px;
-    border: 1px solid #dedede;
-    justify-content: space-between;
+header{
+	
+	
+	background-color: #ffffff;
+	margin-bottom:5px;
+	-webkit-box-shadow: 0 4px 4px -2px #dedede;
+   -moz-box-shadow: 0 4px 4px -2px #dedede;
+        box-shadow: 0 4px 4px -2px #dedede;
+
 }
 
-.paddingHeader {
-    padding: 3px 10px 0 10px;
+.paddingHeader{
+	padding: 3px 10px 0 10px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:100%;
 }
 
-.logo {
-    flex-direction: column;
-    width: 60px;
-    height: auto;
-    margin: 5px 0 0 30px;
+.logo{
+	width:60px;
+	height:auto;
+	
+	margin: 5px 0 0 30px;
 }
 
 #mainTitle {
@@ -37,168 +31,161 @@ header {
     color: #4996FF;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 3.0em;
+    
     margin-top: 25px;
     margin-left: 260px;
     text-align: center;
 }
 
 #tagLine {
-    flex-direction: column color: #333;
+    
+    color: #333;
     font-size: 1.1em;
     margin: 0 0 0 10px;
     line-height: 1em;
 }
 
-header a {
-    text-decoration: none;
-}
-
-header li>img {
-    width: 25px;
-    height: auto;
-    margin-right: 5px;
-    border-radius: 5px;
-}
-
-.upperLowerNav {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.upperNav {
-    flex: 2;
-    align-self: flex-end;
-}
-
-.upperNav ul {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
+.upperNav{
+	text-align:right;
     margin-top: 5px;
     margin-right: 20px;
 }
 
-.upperNav li {
-    margin-right: 5px;
+header a{
+	text-decoration:none;
 }
 
-.lowerNav li {
-    margin-right: 3px;
+.upperNav ul{
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.lowerNav ul{
+	display:flex;
+	flex-direction:row;
+	
+	
 }
 
-.lowerNav {
-    margin-right: 30px;
-    align-self: flex-end;
+
+.supernav{
+	display:flex;
+	flex-direction: column;
+	justify-content:space-between;
+
 }
 
-.lowerNav ul {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    width: auto;
+.lowerNav{
+	margin-top: 65px;
 }
+
+.lowerNav li{
+	margin-right:3px;
+}
+header li>img{
+	width:25px;
+	height:auto;
+	margin-right:5px;
+	border-radius:5px;
+}
+
+header li{
+	vertical-align:middle;
+}
+
+
+.lowerNav{
+	text-align:right;
+	margin-right:17px;
+}
+/*
+.lowerNav ul>li{
+	margin:0 0 0 10px;
+	background:grey;
+	padding:4px;
+	border:1px solid black;
+}*/
 
 
 /*nav Icons*/
-
-.homeIcon::before {
-    font-family: FontAwesome;
-    content: "\F015";
+.homeIcon::before{
+	font-family:FontAwesome;
+	content: "\F015";
+	
 }
 
-.homeIcon::before {
-    font-family: FontAwesome;
-    content: "\F015";
-    margin-right: 3px;
+.homeIcon::before{
+	font-family:FontAwesome;
+	content: "\F015";
+	margin-right:3px;
 }
 
-.statusesIcon::before {
-    font-family: FontAwesome;
-    content: "\F0C1";
-    margin-right: 3px;
-}
-
-.usersIcon::before {
-    font-family: FontAwesome;
-    content: "\F0CA";
-    margin-right: 3px;
+.statusesIcon::before{
+	font-family:FontAwesome;
+	content: "\F0C1";
+	margin-right:3px;
 }
 
 
+.usersIcon::before{
+	font-family:FontAwesome;
+	content: "\F0CA";
+	margin-right:3px;
+}
 /*End*/
-
 
 /* start of search bar*/
 
-.searchIcon::before {
-    font-family: FontAwesome;
-    content: "\F002";
-    font-size: 13px;
-    color: #66757f;
+.searchIcon::before{
+	font-family:FontAwesome;
+	content: "\F002";
+	font-size:13px;
+	color:#66757f;
     margin-right: 3px;
 }
 
-.search {
-    width: 0px;
-    border-right: none;
-    border-left: 1px solid #dedede;
-    border-top: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 0 2px 0 12px;
-    outline: none;
-    height: 25px;
-    background-color: #f5f8fa;
+.search{
+	width: 0px;
+	border-right:none;
+	border-left:1px solid #dedede;
+	border-top:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 0 2px 0 12px;
+	outline:none;
+	height:25px;
+	background-color:#f5f8fa;
 }
 
-.searchButton {
-    border-left: none;
-    border-right: 1px solid #dedede;
-    border-top: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
-    cursor: pointer;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 0 12px 0 2px;
-    outline: none;
-    height: 27px;
-    background-color: #f5f8fa;
+.searchButton{
+	
+	border-left:none;
+	border-right:1px solid #dedede;
+	border-top:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	cursor:pointer;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding: 0 12px 0 2px;
+	outline:none;
+	height:27px;
+	background-color:#f5f8fa;
 }
 
 .clicked {
     width: 110px;
-    -webkit-transition: 1s;
+    -webkit-transition:1s;
+ }
+
+
+.form{
+	margin-right:8px;
 }
 
-.form {
-    margin-right: 8px;
+.backgroundWhite{
+	background-color:#ffffff !important;
 }
-
-.backgroundWhite {
-    background-color: #ffffff !important;
-}
-
 
 /*End*/
 
@@ -206,4 +193,6 @@ header li>img {
     content: " | ";
 }
 
-.logoTagline {}
+.logoTagline{
+	
+}

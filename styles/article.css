@@ -26,14 +26,26 @@ article{
 	padding:13px 10px;
 }
 
+
+main{
+	display:flex;
+	flex-direction: row;
+}
 article{
-	flex: auto;
+	
+	flex:2.5;
+	
+	overflow:hidden;
 }
 
-.blockFeed{	
-	background:#ffffff;	
+.blockFeed{
+	
+	background:#ffffff;
+	
 	border-radius:5px;
-	border:1px solid #dedede;	
+	border:1px solid #dedede;
+	
+	
 }
 
 .post:hover{
@@ -43,7 +55,8 @@ article{
 /*Like, retweet, reply css*/
 .replyIcon::before{
 	font-family:FontAwesome;
-    content: "\f112";	
+	content: "\f112";
+	
 }
 
 .reTweetIcon::before{
@@ -82,8 +95,13 @@ article li>a{
 .postSocialButtons li{
 	font-size: 16px;
 	margin-right:60px;
-	display:inline-block;
+	
 
+}
+
+.postSocialButtons{
+	display:flex;
+	flex-direction: row;
 }
 .postSocialButtons{
 	padding:10px 0 0 0;
