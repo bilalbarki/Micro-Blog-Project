@@ -23,7 +23,9 @@
 }
 
 .followButton:hover {
+    
      background: linear-gradient(#d0d0d0,#ffffff);
+
 
 }
 
@@ -83,7 +85,8 @@
 }
 
 #nav-button{
-    float:right;
+    position: absolute;
+    right:0;
     display:none;
     height:48px;
     width:48px;

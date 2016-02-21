@@ -1,8 +1,8 @@
 /*Styling file for myStatus.html*/
 
 aside {
-    flex-direction: row-reverse;
-    width: 700px;
+    flex:2.5;
+   
 
 }
  aside h2, aside p{
@@ -11,15 +11,19 @@ aside {
 aside li>a{
     color:#a7a7a7;
 }
-
+.blockFeed{
+    margin:0 auto;
+    width:98%;
+}
 .asideGeneralBlock {
     width: auto;
 }
 
 article {
+    flex:1;
     margin-left: 5px;
-    flex-direction: row-reverse;
-    width: 265px;
+    
+   
 }
 
 .singleProfileName {
@@ -43,23 +47,30 @@ article {
 }
 
 @media (max-width: 992px) and (min-width:768px) {
-    article{
-        width:98%;
-    }
+   .blockFeed{
+    flex:1;
+   }
 
-    .singleProfileName{
-/*        float:right;*/
-        height:250px;
+   .singleProfileName{
+       
+        
         background:#f5f8fa;
         border:none;
-        width:45%;
+       
     }
     .singleProfileName h2{
-        vertical-align: middle;
-        margin-top:125px;
+        
         font-size:2.5em;
 
     }
-   
+   article{
+    display:flex;
+    flex-direction: row-reverse;
+   }
+
+   .singleProfileName{
+    flex:1.5;
+    align-self:center;
+   }
 
 }

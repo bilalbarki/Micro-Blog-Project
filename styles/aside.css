@@ -16,11 +16,13 @@ aside h1{
 
 
 aside{
+	flex:1;
 	overflow: hidden;
 }
 
-.notableUsersHeading li, .notableUsersHeading h1, .notableUsersHeading ul{
-	display:inline-block;
+.notableUsersHeading ul{
+	display:flex;
+	flex-direction: row;
 
 }
 
@@ -47,9 +49,13 @@ aside{
 	margin-bottom:10px;
 }
 
-
+.asideLinks ul{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 .asideLinks li{
-	display:inline-block;
+	
 	padding:3px;
 	color: #8899a6;
 }

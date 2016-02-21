@@ -1,8 +1,26 @@
 /*Styling file for allUser.html*/
+.notableUsersList img{
+	float:none;
+}
 
+.notableUsersList{
+	display:flex;
+	flex-direction: row;
+}
+
+.userInfoAndButtons{
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width:100%;
+}
+
+.followMessageMore{
+	
+}
 article{
-	float:left;
-	width:675px;
+	
 	
 	overflow:hidden;
 }
@@ -20,8 +38,8 @@ article{
 }
 
 .asideGeneralBlock{
-	width:initial;
-	margin:0;
+	
+	
 }
 
 .asideLinks{
@@ -77,7 +95,7 @@ article{
 }
 
 .followMessageMore{
-	float:right;
+	
 }
 
 .blockFeed h3{
@@ -86,30 +104,17 @@ article{
 	border-bottom: 1px solid #dedede;
 }
 
-aside{
-	height:auto;
-}
-
-@media (max-width: 992px) and (min-width:768px) {
-	.asideUsers{
-		width:48% !important;
+@media (max-width: 600px){
+	.userInfoAndButtons{
+		flex-direction: column-reverse;
+		justify-content: flex-end;
 	}
 
-	.postSocialButtons li{
-	margin-right:15%;
-
 }
 
+
+@media (max-width: 992px) and (min-width:768px){
 .asideLinks{
 	margin-top:0;
 }
-.AllUsersList{
-	width:auto;
 }
-}
-
-@media screen and (max-width: 600px) {
-	.followMessageMore{
-	float:none;
-}
-	}
