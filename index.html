@@ -23,19 +23,21 @@ Author: Bilal Khan & Mason Fish -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 	<script type="text/javascript" src="js/behavior.js"></script>
+    <script type="text/javascript" src="js/post_a_status.js"></script>
 	<title>Share Site!</title>
 
 </head>
 <body>
     
     <!-- tweet-box, hidden until tweet button is selected -->
-    <div id="screenContent">
+    <div id="screenContent" class="hideTweet">
         <div id="tweetBox">
             <form action="" method="post">
-                <label>label</label>
+                <button id="closeButton" type=button>X</button>
+                <label>What's on your mind?</label>
                 <textarea id="tweetBody"></textarea>
-                <input type="checkbox" name="location" value="value?">
-                <button type="button">Send Tweet</button>
+                <button id="sendButton" type="button">#SEND</button>
+                <p><input type="checkbox" name="location" value="" title="Include Location?">Include Location?</p>
             </form>
         </div>
     </div>
@@ -70,6 +72,9 @@ Author: Bilal Khan & Mason Fish -->
 		  					<li><a href="myStatus.html" class="navButton"><span class="statusesIcon"></span>My Status</a></li>
 		  					<li><a href="allUsers.html" class="navButton"><span class="usersIcon"></span>All Users</a></li>
 		  					<li style="display:none;"><a href="about.html" class="navButton"><span class="usersIcon"></span>About</a></li>
+                            <li>
+                                <button id="tweetButton"><i class="fa fa-paper-plane"></i><span>Post</span></button>
+                            </li>
 						</ul>
 					</div>
 				</div>

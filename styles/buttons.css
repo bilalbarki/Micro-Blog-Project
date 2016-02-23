@@ -104,7 +104,7 @@
 /* TWEET-BOX */
 
 #screenContent {
-    visibility: hidden;
+/*    visibility: hidden;*/
     position: fixed;
     width: 100%;
     height: 100%;
@@ -112,13 +112,79 @@
 }
 
 #tweetBox {
-    visibility: hidden;
+    visibility: inherit;
     position: relative;
     margin: 10% auto 0;
     width: 500px;
     height: 250px;
-    border: 1px solid white;
-    background-color: #f5f8fa;
+    border: 1px solid #dedede;
+    background-color: #55acee;
     border-radius:5px;
 }
+
+#tweetBox label {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 16pt;
+    font-family: 'Open Sans', Verdana, Arial;
+}
+
+#tweetBody {
+    display: block;
+    margin: 20px auto 0;
+    width: 90%;
+    height: 120px;
+}
+
+#sendButton {
+    width: 100px;
+    height: 40px;
+    float: right;
+    margin: 10px 25px 0 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#closeButton {
+    float: right;
+    margin-right: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#tweetBox p {
+    display: block;
+    float: left;
+    margin: 20px 0 0 50px;
+}
+
+#tweetButton {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #dedede;
+    background-color: #55acee;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+#tweetButton span {
+    margin-left: 5px;
+    color: black;
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+#tweetButton:hover {
+    border: 1px solid black;
+}
+
+.hideTweet {
+    visibility: hidden;
+}
+
 
