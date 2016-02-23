@@ -1,57 +1,61 @@
 /*CSS file for general styles that are not specific*/
 
-body{
-	background: #f5f8fa;
+body {
+    background: #f5f8fa;
 }
 
-em{
-	 font-style: italic;
+em {
+    font-style: italic;
 }
 
-a{
-	text-decoration: none;
-	color:#000000;
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
-h1, h2, p{
-	color:#222222;
-}
-#maincontainer{
-	width:992px;
-	border:1px solid #dedede;
-	margin:auto;
-	font-family:'Open Sans',Verdana,Arial;
-	font-size:13px;
+h1,
+h2,
+p {
+    color: #222222;
 }
 
-.grey{
-	color:#bbbbbb;
+#maincontainer {
+    width: 992px;
+    border: 1px solid #dedede;
+    margin: auto;
+    font-family: 'Open Sans', Verdana, Arial;
+    font-size: 13px;
 }
 
-b{
-	font-weight: bold;
+.grey {
+    color: #bbbbbb;
 }
 
-.clearFloat{
-	clear:both;
+b {
+    font-weight: bold;
 }
 
-.clearLeft{
-	clear:left;
+.clearFloat {
+    clear: both;
 }
 
-.clearRight{
-	clear:right;
+.clearLeft {
+    clear: left;
 }
 
-.aHoverColorUnderline:hover{
-	text-decoration:underline;
-	color:#0084B4;
+.clearRight {
+    clear: right;
 }
 
-.aHoverUnderline:hover{
-	text-decoration:underline;
+.aHoverColorUnderline:hover {
+    text-decoration: underline;
+    color: #0084B4;
 }
+
+.aHoverUnderline:hover {
+    text-decoration: underline;
+}
+
 
 /*
 main{
@@ -60,6 +64,6 @@ main{
 }
 */
 
-.padding{
-	padding: 3px 10px 9px 10px;
+.padding {
+    padding: 3px 10px 9px 10px;
 }
