@@ -209,10 +209,10 @@ aside{
 		overflow:hidden;
     height:0;
     width:100%;
-    -webkit-transition:height 400ms ease-in;
-    -moz-transition:height 400ms ease-in;
-    -o-transition:height 400ms ease-in;
-    transition:height 400ms ease-in;
+    -webkit-transition:height 400ms;
+    -moz-transition:height 400ms;
+    -o-transition:height 400ms;
+    transition:height 400ms;
 	}
 
 	.nav-show .supernav, .nav-show .supernav{
