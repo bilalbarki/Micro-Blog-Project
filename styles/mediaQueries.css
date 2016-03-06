@@ -28,12 +28,17 @@
 	.upperNav {
 		
 		text-align: center;
-		margin: 15px auto;
+		
+	}
+
+	.supernav{
+		align-items: center;
+		margin: auto;
 	}
 	.lowerNav {
 		
 		
-		margin: auto;
+		
 		text-align: center;
 	}
 
@@ -68,6 +73,9 @@
 
 /*media query for >768px to <992px to screen size*/
 @media (max-width: 992px) and (min-width:768px) {
+
+
+
 #maincontainer{
 	width:100%;
 }
@@ -124,6 +132,27 @@ aside{
 	border:none;
 }
 
+}
+
+@media (min-width:550px){
+header{
+	-webkit-transition:top 0.5s;
+    -moz-transition:top 0.5s;
+    -o-transition:top 0.5s;
+    transition:top 0.5s;
+	position:fixed;
+	top:0;
+	
+}
+
+.hideHeader{
+	top:-57px;
+}
+
+#maincontainer {
+    
+    margin-top:54px !important;
+}
 }
 
 @media (max-width: 550px){
@@ -206,6 +235,9 @@ aside{
 		font-size:0.95em;
 	}
 	.supernav{
+		display:block;
+
+		width:100%;
 		overflow:hidden;
     height:0;
     width:100%;
@@ -216,10 +248,14 @@ aside{
 	}
 
 	.nav-show .supernav, .nav-show .supernav{
-		height:173px !important;
+		height:167px !important;
 		
 	}
 
+	
+	.logo{
+		width:43px;
+	}
 	.nav-show .menuIcon::before{
     font-family:FontAwesome;
     color:#3b97ff;

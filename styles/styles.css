@@ -26,6 +26,7 @@ p {
     margin: auto;
     font-family: 'Open Sans', Verdana, Arial;
     font-size: 13px;
+    /*margin-top:51px !important;*/
 }
 
 .grey {
