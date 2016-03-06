@@ -1,3 +1,5 @@
+//Javascript for post a status, shows post a status form if user chooses to post one
+
 document.addEventListener("DOMContentLoaded", function () {
     var veil = document.getElementById('screenContent');
     document.getElementById('tweetButton').addEventListener('click', function () {
