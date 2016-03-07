@@ -6,7 +6,7 @@
 
 	
 	.paddingHeader{
-		flex-direction: column;
+		flex-direction: row;
 	}
 	.logoTagline{
 		
@@ -265,5 +265,8 @@ header{
 	
 	.nav-show button{
 		background-color: #c6d5e5 !important;
+	}
+	.paddingHeader{
+		flex-direction: column !important;
 	}
 }
