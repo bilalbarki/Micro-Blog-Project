@@ -67,6 +67,7 @@ function onRGCResult(result, contextMenuEvent) {
   contextMenuEvent.items.push(new H.util.ContextItem({
         label: addressLabel.Location.Address.Label
   }));
+  console.log(addressLabel.Location.Address.Label);
   contextMenuEvent.currentTarget.dispatchEvent(contextMenuEvent);
   contextMenuEvent.stopPropagation();
 };
