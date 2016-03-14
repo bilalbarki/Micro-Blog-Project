@@ -113,14 +113,12 @@ function onIsolineReceived(result){
   if(result && result.response && result.response.isoline) {
     var rawShape = result.response.isoline[0].component[0].shape;
     var strip = new H.geo.Strip();
-
-    isolineCoords = result.response.isoline[0].component[0].shape;
-      
+    
     // Add the returned isoline coordinates to a strip:
-    isolineCoords.forEach(function(coords) {
+    rawShape.forEach(function(coords) {
     strip.pushLatLngAlt.apply(strip, coords.split(','));
     });
-
+    
     // Create a polygon and a marker representing the isoline:
     var polygon = new H.map.Polygon(strip);
     
