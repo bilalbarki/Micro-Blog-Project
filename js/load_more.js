@@ -2,16 +2,13 @@ window.onload = function () {
     event_setup();
 }
 
-function load_more() {
+function load_more(res) {
   var x = document.getElementById("loadMore");
   x.onclick = function() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      document.getElementById("moreHere").innerHTML = xhttp.responseText;
+    ajaxGet("/statuses-1.html", function(res) {
+      document.getElementById("moreHere").innerHTML = res;
       event_setup();
-    }
-    xhttp.open("GET", "/statuses-1.html", true);
-    xhttp.send();
+    });
   }
 }
 
