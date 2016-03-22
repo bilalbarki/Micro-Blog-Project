@@ -21,6 +21,11 @@
   padding-right: 5px;
 }
 
+.offButton {
+  cursor: wait !important;
+  background-color: #dedede !important;
+}
+
 
 /*Follow Button*/
 
