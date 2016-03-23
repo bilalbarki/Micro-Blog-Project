@@ -1,9 +1,9 @@
-//function for requesting a file through xmlhttprequest
+//function to get a file using ajax
 
 function ajaxGet(url, onSuccess) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-     if (xhttp.readyState==4)
+    if (xhttp.readyState==4)
     	onSuccess(xhttp.responseText);
   }
   xhttp.open("GET", url, true);

@@ -29,13 +29,45 @@ Author: Bilal Khan & Mason Fish -->
   <script type="text/javascript" src="js/toggle.js"></script>
   <script type="text/javascript" src="js/load_more.js"></script>
   <script type="text/javascript" src="js/ajax.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
+  <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+
 
   <title>Share Site!</title>
 
 </head>
 
 <body>
+              <script id="header" type="text/x-handlebars-template">
+                <div class="post">
+                   <div class="postHeader">
+                    <a href="about.html"><img src="{{image_path}}" alt="Impossible Octopus Fitness" /></a>
+                    <h2><b><a href="#" class="aHoverColorUnderline">{{name}}</a></b><span class="grey">&nbsp;{{username}}&nbsp;<span class="time">1h</span></span></h2>
+                  </div>
+                  <p>{{status}}</p>
 
+                  <div class="clearFloat"></div>
+                  <ul class="postSocialButtons">
+                    <!--Piping is used-->
+                    <li><a><span class="replyIcon" data-id="{{data_id}}"></span></a></li>
+                    <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                    <li><a href="#"><span class="likeIcon"></span></a></li>
+                    <li><a href="#"><span class="moreIcon"></span></a></li>
+                  </ul>
+
+                  <div class="replyBox">
+                    <form  method="post">
+                      <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                      <div class="flex">
+                        <label class="location">
+                          <input type="checkbox" name="location" value="" title="Include Location?"><span style="color:#222222;">Include Location</span>
+                        </label>
+                        <button class="sendButton" type="button">Reply</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </script>
   <!-- tweet-box, hidden until tweet button is selected -->
   <div id="screenContent" class="hideTweet">
 
@@ -174,7 +206,7 @@ Author: Bilal Khan & Mason Fish -->
 
               <div class="clearFloat"></div>
               <ul class="postSocialButtons">
-                <li><a><span class="replyIcon"></span></a></li>
+                <li><a><span class="replyIcon" data-id="reply_3"></span></a></li>
                 <li><a href="#"><span class="reTweetIcon"></span></a></li>
                 <li><a href="#"><span class="likeIcon"></span></a></li>
                 <li><a href="#"><span class="moreIcon"></span></a></li>
@@ -387,6 +419,7 @@ Author: Bilal Khan & Mason Fish -->
 
             <div id="moreHere"></div>
 
+
           </div>
 
           <form method="post">
@@ -415,9 +448,9 @@ Author: Bilal Khan & Mason Fish -->
 
               <h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;</span></h2>
 
-              <p><a href="about.html">Studies at Holberton School</a></p>
+              <p>It's <span id="weather"></span> today!</p>
 
-              <button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+              <button class="followButton" id=updateWeather><span class="followIcon"></span><b>Update Weather</b></button>
 
 
             </div>
