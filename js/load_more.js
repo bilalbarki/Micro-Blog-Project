@@ -1,4 +1,6 @@
-window.onload = function () {
+//javascript for load more button
+
+window.onload = function () { //call this function onload
     event_setup();
 }
 
@@ -10,9 +12,9 @@ function load_more(res) {
     x.disabled = true;
     x.toggle('offButton');
     window.setTimeout(function() {
-      ajaxGet("/statuses-1.html", function(res) {
-        document.getElementById("moreHere").innerHTML = res;
-        event_setup();
+      ajaxGet("statuses-1.html", function(res) {
+        document.getElementById("moreHere").innerHTML = document.getElementById("moreHere").innerHTML + res;  //callback
+        reply();
       });
       x.disabled = false;
       x.toggle('offButton');
