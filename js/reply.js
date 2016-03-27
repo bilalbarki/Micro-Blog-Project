@@ -5,7 +5,7 @@ function reply() {
       var icons = document.querySelectorAll(".replyIcon");
       for (x = 0; x < icons.length; x++) {
           icons[x].addEventListener("click", function (e) {
-              var box = this.parentElement.parentElement.parentElement.nextElementSibling;
+              var box = this.parentElement.parentElement.nextElementSibling;
               box.toggle('showBox');
           });
       }

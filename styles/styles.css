@@ -29,10 +29,11 @@ p {
 }
 
 .grey {
-    color: #bbbbbb;
+    color: #222222;
+    font-style: italic;
 }
 
-b {
+.bold {
     font-weight: bold;
 }
 
@@ -67,4 +68,12 @@ main{
 
 .padding {
     padding: 3px 10px 9px 10px;
+}
+
+a:focus img {
+    border: 1px solid #55acee;
+}
+
+article a, aside a, header a{
+    color:#2d3ba4 !important;
 }

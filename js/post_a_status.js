@@ -2,13 +2,13 @@
 
 function post_a_status() {
   // document.addEventListener("DOMContentLoaded", function () {
-      var veil = document.getElementById('screenContent');
+      var veil = document.getElementById('tweetBox');
       document.getElementById('tweetButton').addEventListener('click', function () {
           veil.toggle('hideTweet');
       })
 
-      document.getElementById('closeButton').addEventListener('click', function (event) {
-          veil.toggle('hideTweet');
-      })
+//      document.getElementById('closeButton').addEventListener('click', function (event) {
+  //        veil.toggle('hideTweet');
+    //  })
   // });
 }
