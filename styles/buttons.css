@@ -4,7 +4,7 @@
   display: block;
   width: 99.8%;
   margin: 5px auto 0;
-  background-color: #55acee;
+  background-color: #595959;
   border: 1px solid #dedede;
   border-radius: 8px;
   color: white;
@@ -42,19 +42,18 @@
     color: #292f33;
     font-size: 13px;
     padding: 3px 11px 3px;
-    background: linear-gradient(#ffffff, #d0d0d0);
+    
     border-radius: 5px;
     cursor: pointer;
     border: 1px solid #dedede;
-    outline: none;
 }
 
 .followButton:hover {
-    background: linear-gradient(#d0d0d0, #ffffff);
+    border: 1px solid black;
 }
 
 .followButton:active {
-    background: linear-gradient(#ffffff, #ffffff);
+    
 }
 
 
@@ -122,9 +121,9 @@
 
 
 /* TWEET-BOX */
-
-#screenContent {
-    /*    visibility: hidden;*/
+/*
+#screenContent, .screenContent {
+    
     position: fixed;
     width: 100%;
     height: 100%;
@@ -134,7 +133,13 @@
     align-items: center;
     justify-content: center;
     z-index:999;
-    top:0;
+    right:0;
+    visibility: visible;
+    
+}
+*/
+.topZero{
+    display:block;
 }
 
 #tweetBox {
@@ -142,15 +147,16 @@
     padding: 5px;
 box-sizing: border-box;
     /*padding:20px;*/
-     width: 95%;
-     max-width: 500px;
+     width: 100%;
+     
     /*background-color: #00779d;*/
     /*box-shadow:inset 0px 0px 0px 1px black;*/
     /*border: 1px solid grey;*/
-    background-color: #379cbc;
+    background-color: #55acee;
 
-    border-radius:8px;
-    border: 1px solid grey;
+    border-radius: 3px;
+    margin-bottom:5px;
+    
     /*border-top-width: 4px;
     border-top-color: #0088CC;*/
 }
@@ -180,6 +186,7 @@ box-sizing: border-box;
     font-family: 'Open Sans', Verdana, Arial;
     overflow: hidden;
     outline:0;
+
 }
 
 .tweetBody:focus{
@@ -265,7 +272,7 @@ box-sizing: border-box;
 
 .location>span{
     vertical-align: middle;
-    color:white;
+    color:#222222;
 
 }
 
@@ -283,17 +290,17 @@ box-sizing: border-box;
 #tweetButton {
 
     width: 99.8%;
-    padding-top:8px;
-    padding-bottom:7px;
+    padding-top:12px;
+    padding-bottom:11px;
     margin-bottom:7px;
-    background-color: grey;
+    background-color: #595959;
     font-family: 'Open Sans', Verdana, Arial;
     font-size:1.2em;
     display:block;
     cursor: pointer;
     text-align:center;
     vertical-align: middle;
-    background-color: #55acee;
+    
     border: 1px solid #dedede;
     border-radius: 8px;
     color: white;
@@ -321,8 +328,7 @@ box-sizing: border-box;
 
 .hideTweet {
 
-
-    top:-100% !important;
+    display:none;
 }
 
 
@@ -335,7 +341,7 @@ box-sizing: border-box;
 
     padding-left:5px;
     padding-right:5px;
-    max-height: 0;
+    
 
 
     -webkit-transition:max-height 400ms;
@@ -347,7 +353,7 @@ box-sizing: border-box;
 .showBox {
 
 
-    max-height: 200px !important;
+    display:none;
 }
 
 .replyBody {
@@ -385,6 +391,13 @@ box-sizing: border-box;
     border: 1px solid black;
 }
 
+.replyCSS{
+    background:unset;
+    color:#323232;
+    border:0;
+    cursor: pointer;
+}
+
 html {
     overflow-y:scroll;
 }
@@ -394,4 +407,41 @@ html {
     font-size:0.6em;
     font-family: 'Open Sans', Verdana, Arial;
     text-align: end;
+}
+
+.hideTweetNoJS{
+   display:none;
+}
+
+#statusToggle:checked + .hideTweetNoJS{
+    display:block;
+    
+
+} 
+
+#statusToggle{
+   height:0;
+   overflow:hidden;
+}
+
+.tweetButtonNoJS{
+    width: 100%;
+    padding-top:12px;
+    padding-bottom:11px;
+    
+    background-color: grey;
+    font-family: 'Open Sans', Verdana, Arial;
+    font-size:1.2em;
+    display:block;
+    cursor: pointer;
+    text-align:center;
+    vertical-align: middle;
+    background-color: #55acee;
+    
+    
+    color: white;
+}
+
+.tweetButtonNoJS i{
+    margin-right:17px;
 }

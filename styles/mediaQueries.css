@@ -56,7 +56,7 @@
 		margin: 0 auto;
 		width: auto;
 	}
-	footer {
+	.beta {
 		position: static;
 		
 		width: 100%;
@@ -106,7 +106,7 @@ aside{
 	
 }
 
-footer{
+.beta{
 	position:static;
 	flex:1;
 	
