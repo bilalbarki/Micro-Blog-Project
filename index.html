@@ -29,6 +29,9 @@
   <script type="text/javascript" src="js/toggle.js"></script>
   <script type="text/javascript" src="js/load_more.js"></script>
   <script type="text/javascript" src="js/ajax.js"></script>
+  <script type="text/javascript" src="js/sticky_smart_header.js"></script>
+  <script type="text/javascript" src="js/geolocation.js"></script>
+     <script type="text/javascript" src="js/geolocation_progressive_enhancement.js"></script>
 
   
 
@@ -39,7 +42,7 @@
   <div id="maincontainer">
     <!--main container that contains every other body elements-->
 
-    <header>
+    <header id="header" role="header">
       <div class="paddingHeader">
         <!--paddingHeader for defining header padding-->
         <div class="logoAndTagline">
@@ -52,7 +55,7 @@
           </div>
         </div>
         <div class="supernav">
-          <div class="upperNav">
+          <div class="upperNav" role="logout and edit my profile navigation">
             <!--UpperNav contains Logout, edit my profile, picture and searchbar-->
 
             <ul class="pipes">
@@ -63,7 +66,7 @@
             </ul>
           </div>
 
-          <div class="lowerNav">
+          <div class="lowerNav" role="navigation menu">
             <!--lowerNav contains menu buttons such as Home, All Users-->
             <ul>
               <!--class "navButtonCurrentlyViewing" is used to make the lower border blue of the currently active menu button-->
@@ -99,7 +102,7 @@
               </div>
             </div>
             -->
-        <div id="post_a_status">
+        <div id="post_a_status" role="Post a status section">
           <noscript>
                 <div id="tweetBox">
                   <!--<label for="statusToggle" id="closeButton"><span></span></label>-->
@@ -115,7 +118,7 @@
           </noscript>
         </div>
           
-          <div class="blockFeed">
+          <div class="blockFeed" role="All Statuses Section">
             <!--div where the news feed is shown-->
             <div class="post">
               <!--div that contains the individual post-->
@@ -130,7 +133,7 @@
                 <!--Piping is used-->
                 <li><button aria-label="reply" type="button" class="replyIcon replyCSS" data-id="reply_1">Reply</button></li>
               </ul>
-              <div class="replyCode">
+              <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -157,7 +160,7 @@
                <li><button aria-label="reply" type="button" class="replyIcon replyCSS" data-id="reply_2">Reply</button></li>
                 
               </ul>
-              <div class="replyCode">
+              <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -184,7 +187,7 @@
                <li><button aria-label="reply" type="button" class="replyIcon replyCSS">Reply</button></li>
                 
               </ul>
-              <div class="replyCode">
+              <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -210,7 +213,7 @@
                <li><button aria-label="reply" type="button" class="replyIcon replyCSS">Reply</button></li>
                
               </ul>
-              <div class="replyCode">
+              <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -237,7 +240,7 @@
                <li><button aria-label="reply" type="button" class="replyIcon replyCSS">Reply</button></li>
                 
               </ul>
-              <div class="replyCode">
+              <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -264,7 +267,7 @@
                <li><button aria-label="reply" type="button" class="replyIcon replyCSS">Reply</button></li>
                
               </ul>
-              <div class="replyCode">
+              <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -290,7 +293,7 @@
               <li><button aria-label="reply" type="button" class="replyIcon replyCSS">Reply</button></li>
                 
               </ul>
-             <div class="replyCode">
+             <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -317,7 +320,7 @@
                <li><button aria-label="reply" type="button" class="replyIcon replyCSS">Reply</button></li>
                 
               </ul>
-              <div class="replyCode">
+              <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -344,7 +347,7 @@
                <li><button aria-label="reply" type="button" class="replyIcon replyCSS">Reply</button></li>
                
               </ul>
-              <div class="replyCode">
+              <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -362,7 +365,7 @@
             <div class="post">
               <div class="postHeader">
                 <img src="images/photo1.jpg" alt="Imp" />
-                <h2 class="bold"><a href="about.html" class="aHoverColorUnderline">Jane K.</a><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+                <h3 class="bold"><a href="about.html" class="aHoverColorUnderline">Jane K.</a><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h3>
               </div>
               <p>Watched an amazing movie! You guys should also check out too! So this movie revolves around batman vs superman. Even longer than this, lorem ipsum dadium, noficaloy Ya it works! constant, and we are moving zing resources about advance smoothly aligns itself when nd these thoughts! Feeling like Aris niques just by googling!</p>
 
@@ -370,7 +373,7 @@
                <li><button aria-label="reply" type="button" class="replyIcon replyCSS">Reply</button></li>
                 
               </ul>
-              <div class="replyCode">
+              <div class="replyCode" role="reply">
                 <noscript>
                   <div class="replyBox">
                     <form  method="post">
@@ -384,7 +387,7 @@
               </div>
             </div>
 
-            <div id="moreHere" aria-live="polite"></div>
+            <div id="moreHere" aria-live="polite" role="more statuses"></div>
 
           </div>
 
@@ -395,7 +398,7 @@
 
 
         <aside>
-          <div class="asideGeneralBlock asideUsers">
+          <div class="asideGeneralBlock asideUsers" role="Notable Users List">
             <!--Aside Block-->
 
             <div class="notableUsersHeading">
@@ -448,7 +451,7 @@
 
           </div>
 
-          <div class="asideGeneralBlock asideLinks">
+          <div class="asideGeneralBlock asideLinks" role="Links Section">
             <!--Sitemap-->
             <ul>
               <li>&#169;&nbsp;HaShare</li>
@@ -458,14 +461,14 @@
             </ul>
           </div>
 
-          <div class="beta">
+          <div class="beta" role="Website is in beta banner">
             <!--always stays at bottom right corner -->
             <p>This website is in beta</p>
           </div>
         </aside>
       </main>
     </div>
-    <footer>
+    <footer role="footer">
          <div class="footerLinks">
           <ul>
               <li class="grey2 bold">SITEMAP</li>
