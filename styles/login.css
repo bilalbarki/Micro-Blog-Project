@@ -1,0 +1,111 @@
+body{
+background-color: #ffffff;
+background-image: url("http://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+font-family: 'Open Sans', Verdana, Arial;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+box-sizing: border-box;
+color:#222222;
+}
+
+header{
+	background-color: #222222;
+	height:45px;
+	color:#ffffff;
+	line-height: 45px;
+}
+
+header h1{
+	margin-left:25px; 
+	font-size:1.3em;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.login_form{
+
+}
+
+form{
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -200px;
+}
+
+.username_addon, input {
+            font-size: 17px;
+            margin: 0;
+            border: 0;
+            padding: 9px;
+            box-sizing: border-box;
+}
+
+.username_addon{
+	
+	text-align: center;
+    background-color: rgba(147,128,108,.1);
+    
+}
+
+input{
+	
+
+}
+
+.block{
+	border: 1px solid rgba(147,128,108,.25);
+	display:inline-block;
+	
+}
+
+.block_s{
+	margin-top:10px;
+	text-align: right;
+}
+
+button{
+	font-size: 17px;
+	cursor:pointer;
+	background-color: #ffffff !important;
+	 margin: 0;
+          border: 1px solid #292f33;
+          border-radius: 2px;
+            padding: 9px;
+            box-sizing: border-box;
+            background-color: rgba(147,128,108,.1);
+}
+
+
+.user_icon::before {
+    font-family: FontAwesome;
+    content: "\f007";
+    
+}
+
+.password_icon::before {
+    font-family: FontAwesome;
+    content: "\f023";
+   
+}
+
+
+@media (max-width:550px){
+	.block{
+		display:block;
+		margin-top:10px;
+	}
+	.block_s{
+	margin-top:10px;
+	text-align: center;
+	cursor: pointer;
+}
+	form{
+	
+  margin-top: -80px;
+  margin-left: -100px;
+}
+}
