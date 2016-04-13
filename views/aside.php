@@ -15,7 +15,15 @@
          <!--Lists related users that the user could knw -->
          <img src="images/photo1.jpg" alt="User Image" />
          <h2 class="bold"><a href="#" class="aHoverColorUnderline">David Eicher</a><span class="grey">&nbsp;@DavidEicher&nbsp;</span></h2>
-         <p><?php echo "Your rot13’d login is: " . str_rot13($username);?><br /><?php echo "The length of your login is: " . strlen($username)?></p>
+         <p><?php 
+         if ($check){
+            echo "Your rot13’d login is: " . str_rot13($username);
+         }
+         ?><br /><?php 
+         if ($check){
+            echo "The length of your login is: " . strlen($username);
+         }
+         ?></p>
          <button class="followButton"><span class="followIcon">&nbsp;</span>Follow</button>
       </div>
       <div class="notableUsersList">

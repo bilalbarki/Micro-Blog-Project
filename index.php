@@ -15,10 +15,12 @@
      if ($current_user){
        $full_name = $current_user['full_name'];
        $banner=false;
+       $check=true;
        setcookie( "login", $current_user['login'], time()+(60*60*24*7) );  //set cookie
      } else {
          $full_name = "there";
          $banner = true;
+         $check=false;
        }
    
    } elseif (isset($_COOKIE['login'])){
@@ -26,11 +28,13 @@
        $username = $current_user['login'];
        $full_name = $current_user['full_name'];
        $banner = false;
+       $check=true;
    } else {
      $username = "";
      $password = "";
      $full_name = "there";
      $banner=false;
+     $check=false;
    }
    
 ?>
