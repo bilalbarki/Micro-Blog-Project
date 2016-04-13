@@ -1,10 +1,10 @@
 <?php 
-   include_once "model/user.php";
-   include_once "model/status.php";
-   if (isset($_COOKIE['login'])){
+   include_once "model/user.php";   //contains user info
+   include_once "model/status.php"; //contains statuses info
+   if (isset($_COOKIE['login'])){   //check if cookie is set
        $current_user = fromCookie($_COOKIE['login'],$users);
        $full_name = $current_user['full_name'];
-   } else{
+   } else{  //if cookie is not set
    	$full_name="there";
    }
    $banner=false;

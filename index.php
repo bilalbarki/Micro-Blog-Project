@@ -1,13 +1,13 @@
 <?php 
-   include_once "model/user.php";
-   function userExists($login, $password, $users){
+   include_once "model/user.php"; //contains user info
+   function userExists($login, $password, $users){  //returns user array or false depending on input parameters
      foreach ($users as $value){
        if ( $login == $value['login'] && $password == $value['password'] ) return $value;
      }
      return false;
    }
    
-   if (isset($_POST['submit'])){
+   if (isset($_POST['submit'])){ //if submit value is set
      $username = $_POST['login'];
      $password = $_POST['password'];
    
@@ -23,7 +23,7 @@
          $check=false;
        }
    
-   } elseif (isset($_COOKIE['login'])){
+   } elseif (isset($_COOKIE['login'])){ //checks if cookie is already set
        $current_user = fromCookie($_COOKIE['login'],$users);
        $username = $current_user['login'];
        $full_name = $current_user['full_name'];

@@ -9,12 +9,12 @@ $status = [
     array("id" => 7, "user_id" => 1, "status" => "Just adding more text so that the text smoothly aligns itself when the image height is exceeded by the text. I hope this much text is sufficient to do that. What if you make the text look more longer. Even longer than this, lorem ipsum dadium, noficaloy Ya it works! So it seems the text is still not under the image so i'll just add more text to it, i hope it works this time!"),
     array("id" => 8, "user_id" => 2, "status" => "Found amazing resources about advance CSS techniques just by googling it. Loving it!"),
     array("id" => 9, "user_id" => 3, "status" => "Watched an amazing movie! You guys should also check out too! So this movie revolves around batman vs superman. Even longer than this, lorem ipsum dadium, noficaloy Ya it works! constant, and we are moving zing resources about advance smoothly aligns itself when nd these thoughts! Feeling like Aris niques just by googling!"),
-  ];
+  ];  //contains statuses info
 ?>
 
 <?php
 
-function status_template($full_name, $id, $status, $img){
+function status_template($full_name, $id, $status, $img){ //template for displaying statuses
   echo "<div class='post'>
    <!--div that contains the individual post-->
    <div class='postHeader'>

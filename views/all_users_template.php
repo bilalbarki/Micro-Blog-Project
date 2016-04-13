@@ -1,5 +1,5 @@
 <?php 
-function template($full_name, $id, $info, $img){
+function template($full_name, $id, $info, $img){   //template for displaying all users
 	echo "<div class='notableUsersList'>
    <a href='about.html'><img src='images/{$img}' alt='isttt' /></a>
    <div class='userInfoAndButtons'>
