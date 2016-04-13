@@ -1,42 +1,13 @@
 /*media query for <768px screen size*/
 @media screen and (max-width: 768px) {
+	
+
 	#maincontainer {
 		width: 99.5%;
 	}
 
 	
-	.paddingHeader{
-		flex-direction: column;
-	}
-	.logoTagline{
-		
-		
-		
-		text-align:center;
-	}
-
-	.logo {
-		
-		margin: 0 auto;
-		
-		
-	}
-	.logo h2{
-		margin:0;
-	}
 	
-	.upperNav {
-		
-		text-align: center;
-		margin: 15px auto;
-	}
-	.lowerNav {
-		
-		
-		margin: auto;
-		text-align: center;
-	}
-
 
 
 	main{
@@ -127,6 +98,39 @@ aside{
 }
 
 @media (max-width: 550px){
+	/* copied from midle media query rules just for overwrriting to be optimized later*/
+	.paddingHeader{
+		flex-direction: column;
+	}
+	.logoTagline{
+		
+		
+		
+		text-align:center;
+	}
+
+	.logo {
+		
+		margin: 0 auto;
+		
+		
+	}
+	.logo h2{
+		margin:0;
+	}
+	
+	.upperNav {
+		
+		text-align: center;
+		margin: 15px auto;
+	}
+	.lowerNav {
+		
+		
+		margin: auto;
+		text-align: center;
+	}
+
 	#nav-button{
 		display:block;
 	}
@@ -230,4 +234,30 @@ aside{
 	.nav-show button{
 		background-color: #c6d5e5 !important;
 	}
+
+
+
+}
+
+
+@media (min-width:550px){
+header{
+	-webkit-transition:visibility 0.5s, top 0.5s;
+    -moz-transition:visibility 0.5s, top 0.5s;
+    -o-transition:visibility 0.5s, top 0.5s;
+    transition:visibility 0.5s, top 0.5s;
+	position:fixed;
+	top:0;
+	visibility:visible;
+}
+
+.hideHeader{
+	visibility:hidden;
+	top:-57px;
+}
+
+#maincontainer {
+    
+    margin-top:54px !important;
+}
 }

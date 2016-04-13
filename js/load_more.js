@@ -27,6 +27,8 @@ function event_setup() {
   post_a_status();
   load_more();
   reply();
+  geolocation();
+  pe();
 }
 
 function javascript_enabled(callback){
@@ -37,7 +39,7 @@ function javascript_enabled(callback){
                 <form  method='post'>
                   <textarea class='tweetBody' placeholder='What&quot;s on your mind?'></textarea>
                   <div class='flex'>
-                    <label class='location'><input type='checkbox' name='location' value='' title='Include Location?'><span>Include Location</span></label>
+                    <label class='location'><input id="location" type='checkbox' name='location' value='' title='Include Location?'><span>Include Location</span></label>
                     <button id='sendButton' class='sendButton' type='button'>Post</button>
                   </div>
                 </form>
